@@ -1,0 +1,28 @@
+<html>
+   <head>
+
+   </head>
+   <body>
+       <h3>My name is {{name}} and i am {{age}} years old.</h3>
+       <div>
+           <span>
+               <div>
+                   <h3>Bball for the win</h3>
+                   <span>
+                       <h4>I love {{sport}}</h4>
+                       <h5>{{she}} is a {{shakes}}</h5>
+                   </span>
+               </div>
+           </span>
+       </div>
+       <button onclick="fillUp()">PARSE</button>
+       <script src="./index.js"></script>
+       <script>
+           function fillUp() {
+            const parse = new Parse({name: 'paschal', age: 45, sport: 'Basketball', she: 'Ella', shakes: 'goddess'});
+            parse.render();
+           }
+           
+       </script>
+   </body> 
+</html>
